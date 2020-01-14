@@ -34,7 +34,6 @@ export default class MyApp extends App {
 
   render () {
     const { Component, pageProps } = this.props
-    console.log(JSON.stringify(this.store))
     return (
       <Provider value={this.store}>
         <Component {...pageProps} />
