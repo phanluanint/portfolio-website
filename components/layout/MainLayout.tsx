@@ -5,7 +5,7 @@ interface IProps {
     children: React.ReactChild
 }
 
-const MainLayout: React.FunctionComponent<IProps> = ({ children }) => (
+const MainLayout: React.FC<IProps> = ({ children }) => (
     <>
         <Head>
             <title>Hello world</title>
