@@ -1,5 +1,4 @@
 import { Instance, types } from 'mobx-state-tree'
-import { RootModel } from './Root'
 
 export const Counter = types
 .model({

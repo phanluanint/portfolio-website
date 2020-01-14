@@ -1,26 +1,22 @@
-import { applySnapshot, onSnapshot } from 'mobx-state-tree'
+import { applySnapshot } from 'mobx-state-tree'
 import { RootModel, initRoot, RootInstance } from './Root'
 import { createContext, useContext } from 'react'
 
 let rootStore: RootInstance | null = null
 
-export const createStore = (isServer: boolean, snapshot: RootInstance | null = null, pageProps: Object  | null = null) => {
+export const createStore = (isServer: boolean, pageProps: Object = {}, snapshot: RootInstance | null = null) => {
+  const rootWithPageProps = {...initRoot, ...pageProps}
   if (isServer) {
-    rootStore = RootModel.create(initRoot)
+    rootStore = RootModel.create(rootWithPageProps)
   }
   if (rootStore === null) {
-    rootStore = RootModel.create(initRoot)
-  }
-
-  if (pageProps) {
-    applySnapshot(rootStore, {...initRoot, ...pageProps})
+    rootStore = RootModel.create(rootWithPageProps)
   }
 
   if (snapshot) {
     applySnapshot(rootStore, snapshot)
   }
 
-  onSnapshot(rootStore, snapshot => console.log("Snapshot: ", snapshot));
   return rootStore as RootInstance;
 }
 

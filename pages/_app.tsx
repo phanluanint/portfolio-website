@@ -6,33 +6,22 @@ import { RootInstance } from '../models/Root'
 
 interface IOwnProps {
   isServer: boolean
-  initialState: RootInstance
+  state: RootInstance
 }
 
 export default class MyApp extends App {
   private store: RootInstance
 
-  static async getInitialProps ({
-    Component, ctx }: AppContext) {
-    //
-    // Use getInitialProps as a step in the lifecycle when
-    // we can initialize our store
-    //
-    const isServer = typeof window === 'undefined'
-    //
-    // Check whether the page being rendered by the App has a
-    // static getInitialProps method and if so call it
-    //
+  static async getInitialProps ({ Component, ctx }: AppContext) {
     let pageProps = {}
     if (Component.getInitialProps) {
       pageProps = await Component.getInitialProps(ctx)
     }
-    const rootStore = createStore(isServer, null, pageProps)
-
-    console.log('rootStore', JSON.stringify(rootStore))
+    const isServer = typeof window === 'undefined'
+    const rootStore = createStore(isServer, pageProps)
 
     return {
-      initialState: getSnapshot(rootStore),
+      state: getSnapshot(rootStore),
       isServer,
       pageProps,
     }
@@ -40,7 +29,7 @@ export default class MyApp extends App {
 
   constructor (props: AppProps & IOwnProps) {
     super(props)
-    this.store = createStore(props.isServer, props.initialState) as RootInstance
+    this.store = createStore(props.isServer, props.state) as RootInstance
   }
 
   render () {
