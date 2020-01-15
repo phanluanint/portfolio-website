@@ -1,18 +1,18 @@
 import React from 'react'
 import { Provider, createStore } from '../models'
 import { getSnapshot } from 'mobx-state-tree'
-import App, { AppContext, AppProps } from 'next/app'
+import App, { AppContext, AppProps, AppInitialProps } from 'next/app'
 import { RootInstance } from '../models/Root'
 
-interface IOwnProps {
+interface MSTProps {
   isServer: boolean
-  state: RootInstance
+  proxyState: RootInstance
 }
 
 export default class MyApp extends App {
-  private store: RootInstance
+  protected store: RootInstance
 
-  static async getInitialProps ({ Component, ctx }: AppContext) {
+  static getInitialProps = async ({ Component, ctx }: AppContext): Promise<AppInitialProps & MSTProps> => {
     let pageProps = {}
     if (Component.getInitialProps) {
       pageProps = await Component.getInitialProps(ctx)
@@ -21,18 +21,18 @@ export default class MyApp extends App {
     const rootStore = createStore(isServer, pageProps)
 
     return {
-      state: getSnapshot(rootStore),
+      proxyState: getSnapshot<RootInstance>(rootStore),
       isServer,
       pageProps,
     }
   }
 
-  constructor (props: AppProps & IOwnProps) {
+  constructor(props: AppProps & MSTProps) {
     super(props)
-    this.store = createStore(props.isServer, props.state) as RootInstance
+    this.store = createStore(props.isServer, props.proxyState)
   }
 
-  render () {
+  render(): JSX.Element {
     const { Component, pageProps } = this.props
     return (
       <Provider value={this.store}>

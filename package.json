@@ -9,7 +9,8 @@
     "start": "next start",
     "analyze": "cross-env ANALYZE=true next build",
     "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
-    "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build"
+    "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build",
+    "eslint": "eslint --ext .ts --ext .tsx --fix src"
   },
   "keywords": [],
   "author": "",
@@ -29,10 +30,17 @@
     "@next/bundle-analyzer": "^9.1.7",
     "@types/node": "^13.1.4",
     "@types/react": "^16.9.17",
+    "@typescript-eslint/eslint-plugin": "^2.16.0",
+    "@typescript-eslint/parser": "^2.16.0",
     "cross-env": "^6.0.3",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.17.0",
     "node-sass": "^4.13.0",
     "postcss-import": "^12.0.1",
     "postcss-preset-env": "^6.7.0",
+    "prettier": "^1.19.1",
     "tailwindcss": "^1.1.4",
     "typescript": "^3.7.4"
   }

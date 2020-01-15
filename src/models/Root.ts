@@ -4,12 +4,12 @@ import { Cart, initCart } from './types/Cart'
 
 export const RootModel = types.model({
   counter: Counter,
-  cart: Cart
-});
+  cart: Cart,
+})
 
 export const initRoot = {
   counter: initCounter,
-  cart: initCart
+  cart: initCart,
 }
 
-export type RootInstance = Instance<typeof RootModel>;
+export type RootInstance = Instance<typeof RootModel>

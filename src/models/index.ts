@@ -4,8 +4,12 @@ import { createContext, useContext } from 'react'
 
 let rootStore: RootInstance | null = null
 
-export const createStore = (isServer: boolean, pageProps: Object = {}, snapshot: RootInstance | null = null) => {
-  const rootWithPageProps = {...initRoot, ...pageProps}
+export const createStore = (
+  isServer: boolean,
+  pageProps: object = {},
+  snapshot: RootInstance | null = null,
+): RootInstance => {
+  const rootWithPageProps = { ...initRoot, ...pageProps }
   if (isServer) {
     rootStore = RootModel.create(rootWithPageProps)
   }
@@ -17,17 +21,17 @@ export const createStore = (isServer: boolean, pageProps: Object = {}, snapshot:
     applySnapshot(rootStore, snapshot)
   }
 
-  return rootStore as RootInstance;
+  return rootStore
 }
 
-const RootStoreContext = createContext<null | RootInstance>(null);
+const RootStoreContext = createContext<null | RootInstance>(null)
 
-export const Provider = RootStoreContext.Provider;
+export const Provider = RootStoreContext.Provider
 
-export function useMst() {
-  const store = useContext(RootStoreContext);
+export function useMst(): RootInstance {
+  const store = useContext(RootStoreContext)
   if (store === null) {
-    throw new Error("Store cannot be null, please add a context provider");
+    throw new Error('Store cannot be null, please add a context provider')
   }
-  return store as RootInstance;
+  return store
 }
