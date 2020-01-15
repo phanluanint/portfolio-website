@@ -1,7 +1,7 @@
 import React from 'react'
-import { Provider, createStore } from '../models'
 import { getSnapshot } from 'mobx-state-tree'
 import App, { AppContext, AppProps, AppInitialProps } from 'next/app'
+import { Provider, createStore } from '../models'
 import { RootInstance } from '../models/Root'
 
 interface MSTProps {

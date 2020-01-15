@@ -10,6 +10,7 @@ interface Props {
 const Button: React.FC<Props> = ({ label, className, disabled = false, ...otherProps }) => {
   return (
     <button
+      type="button"
       {...otherProps}
       disabled={disabled}
       className={`px-4 py-2 rounded leading-tight text-gray-900 bg-gray-300 select-none focus:outline-none focus:shadow-outline ${!disabled &&

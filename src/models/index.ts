@@ -1,6 +1,6 @@
 import { applySnapshot } from 'mobx-state-tree'
-import { RootModel, initRoot, RootInstance } from './Root'
 import { createContext, useContext } from 'react'
+import { RootModel, initRoot, RootInstance } from './Root'
 
 let rootStore: RootInstance | null = null
 
@@ -26,7 +26,7 @@ export const createStore = (
 
 const RootStoreContext = createContext<null | RootInstance>(null)
 
-export const Provider = RootStoreContext.Provider
+export const { Provider } = RootStoreContext
 
 export function useMst(): RootInstance {
   const store = useContext(RootStoreContext)
