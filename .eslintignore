@@ -1,4 +1,4 @@
 # Start by ignoring everything by default
-*
+/*
 # Enable linting only for src
-!src
+!/src
