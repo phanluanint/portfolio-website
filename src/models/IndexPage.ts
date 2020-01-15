@@ -2,14 +2,14 @@ import { Instance, types } from 'mobx-state-tree'
 import { Counter, initCounter } from './types/Counter'
 import { Cart, initCart } from './types/Cart'
 
-export const RootModel = types.model({
+export const IndexPage = types.model({
   counter: Counter,
   cart: Cart,
 })
 
-export const initRoot = {
+export const initIndexPage = {
   counter: initCounter,
   cart: initCart,
 }
 
-export type RootInstance = Instance<typeof RootModel>
+export type IndexPageInstance = Instance<typeof IndexPage>

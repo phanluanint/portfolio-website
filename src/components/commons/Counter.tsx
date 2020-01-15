@@ -1,12 +1,14 @@
 import React from 'react'
 import { observer } from 'mobx-react-lite'
 
-import { useMst } from '../../models'
+import useStore from '../../utils/useStore'
 
 import Button from './Button'
 
 const Counter: React.FC = observer(() => {
-  const { counter } = useMst()
+  const {
+    IndexPage: { counter },
+  } = useStore()
   return (
     <div className="mt-20 flex flex-col items-center">
       <p className="font-bold text-2xl text-center">Counter</p>

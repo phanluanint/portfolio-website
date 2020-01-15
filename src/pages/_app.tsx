@@ -1,8 +1,9 @@
 import React from 'react'
 import { getSnapshot } from 'mobx-state-tree'
 import App, { AppContext, AppProps, AppInitialProps } from 'next/app'
-import { Provider, createStore } from '../models'
-import { RootInstance } from '../models/Root'
+import { Provider } from '../utils/useStore'
+import createStore from '../utils/createStore'
+import { RootInstance } from '../models'
 
 interface MSTProps {
   isServer: boolean

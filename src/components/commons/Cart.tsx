@@ -1,10 +1,12 @@
 import { observer } from 'mobx-react-lite'
 import React, { useState, ChangeEvent } from 'react'
-import { useMst } from '../../models'
+import useStore from '../../utils/useStore'
 import Button from './Button'
 
 const Cart: React.FC = observer(() => {
-  const { cart } = useMst()
+  const {
+    IndexPage: { cart },
+  } = useStore()
 
   const [name, setName] = useState('The Hobbit')
   const [price, setPrice] = useState(20)

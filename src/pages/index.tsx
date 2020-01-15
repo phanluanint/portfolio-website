@@ -1,10 +1,10 @@
 import React from 'react'
 import { NextPage } from 'next'
 import '../styles/index.css'
-import IndexContent from '../components/page-index/IndexContent'
+import IndexContent from '../components/IndexPage'
 import MainLayout from '../components/layouts/MainLayout'
 
-const Home: NextPage = () => {
+const IndexPage: NextPage = () => {
   return (
     <MainLayout>
       <IndexContent />
@@ -12,18 +12,20 @@ const Home: NextPage = () => {
   )
 }
 
-Home.getInitialProps = async (): Promise<object> => {
+IndexPage.getInitialProps = async (): Promise<object> => {
   return {
-    counter: { count: 2 },
-    cart: {
-      items: [
-        {
-          name: 'Ahihi',
-          price: 200,
-        },
-      ],
+    IndexPage: {
+      counter: { count: 2 },
+      cart: {
+        items: [
+          {
+            name: 'Ahihi',
+            price: 200,
+          },
+        ],
+      },
     },
   }
 }
 
-export default Home
+export default IndexPage
