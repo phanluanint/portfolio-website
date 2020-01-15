@@ -1,6 +1,6 @@
 import { Instance, types } from 'mobx-state-tree'
-import { Counter, initCounter } from './Counter'
-import { Cart, initCart } from './Cart'
+import { Counter, initCounter } from './types/Counter'
+import { Cart, initCart } from './types/Cart'
 
 export const RootModel = types.model({
   counter: Counter,

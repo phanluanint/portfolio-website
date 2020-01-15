@@ -2,7 +2,7 @@ import React from 'react'
 import { NextPage } from 'next'
 import '../styles/index.css'
 import IndexContent from '../components/page-index/IndexContent'
-import MainLayout from "../components/layout/MainLayout";
+import MainLayout from "../components/layouts/MainLayout";
 
 const Home: NextPage = () => {
   return (
