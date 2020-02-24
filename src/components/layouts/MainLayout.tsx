@@ -10,8 +10,9 @@ const MainLayout: React.FC<Props> = ({ children }) => (
     <Head>
       <title>Hello world</title>
       <link rel="shortcut icon" href="/favicon.ico" />
+      <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
     </Head>
-    <div className="bg-gray-800 text-white">{children}</div>
+    <div>{children}</div>
   </>
 )
 
