@@ -1,5 +1,6 @@
 import React from 'react'
 import Particles from 'react-particles-js'
+import IcoMoon from '../commons/IcoMoon'
 
 const IndexContent: React.FC = () => {
   return (
@@ -25,6 +26,14 @@ const IndexContent: React.FC = () => {
             <div className="text-xl max-w-2xl text-gray-600">
               I am a frontend web developer. I can provide clean code and pixel perfect design. I also make website more
               & more interactive with web animations.
+            </div>
+            <div>
+              <div className="rounded-full bg-white inline-block p-4 m-2">
+                <IcoMoon icon="facebook2" size="30" color="red" />
+              </div>
+              <div className="rounded-full bg-white inline-block p-4 m-2">
+                <IcoMoon icon="linkedin" size="30" color="red" />
+              </div>
             </div>
           </div>
         </div>
