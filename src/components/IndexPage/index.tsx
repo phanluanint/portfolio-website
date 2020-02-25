@@ -29,10 +29,13 @@ const IndexContent: React.FC = () => {
             </div>
             <div>
               <div className="rounded-full bg-white inline-block p-4 m-2">
-                <IcoMoon icon="facebook2" size="30" color="red" />
+                <IcoMoon icon="facebook" size="30" color="red" />
               </div>
               <div className="rounded-full bg-white inline-block p-4 m-2">
                 <IcoMoon icon="linkedin" size="30" color="red" />
+              </div>
+              <div className="rounded-full bg-white inline-block p-4 m-2">
+                <IcoMoon icon="github" size="30" color="red" />
               </div>
             </div>
           </div>
