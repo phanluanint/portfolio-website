@@ -6,3 +6,11 @@ html, body {
     margin: 0;
     padding: 0;
 }
+body div {
+    transition: all 150ms ease-out;
+}
+
+.home-social:hover svg {
+    fill: #037fff!important;
+    transition: all 300ms ease-out;
+}
