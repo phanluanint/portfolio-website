@@ -1,6 +1,5 @@
 import React from 'react'
 import Particles from 'react-particles-js'
-import IcoMoon from '../commons/IcoMoon'
 
 const IndexContent: React.FC = () => {
   return (
@@ -30,9 +29,9 @@ const IndexContent: React.FC = () => {
               & more interactive with web animations.
             </div>
             <div className="flex items-center justify-center  mt-5">
-              {['facebook', 'linkedin', 'github'].map(item => (
-                <div className="home-social transition duration-300 ease-out border-2 border-gray-800 text-gray-600 flex items-center justify-center rounded-full bg-transparent inline-block m-2 w-12 h-12 hover:border-blue-1000 cursor-pointer">
-                  <IcoMoon icon={item} size="20" color="#a0aec0" />
+              {['icon-facebook', 'icon-linkedin', 'icon-github'].map(item => (
+                <div className="text-xl transition duration-300 ease-out border-2 border-gray-800 text-gray-500 flex items-center justify-center rounded-full bg-transparent inline-block m-2 w-12 h-12 hover:border-blue-1000 hover:text-blue-1000 cursor-pointer">
+                  <div className={item} />
                 </div>
               ))}
             </div>
