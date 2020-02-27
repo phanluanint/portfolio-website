@@ -1,12 +1,33 @@
 import React from 'react'
 import Particles from 'react-particles-js'
+import Link from 'next/link'
 
 const IndexContent: React.FC = () => {
   return (
     <div className="flex bg-gray-1100 h-screen font-body">
-      <div className="flex-initial w-1/6 text-gray-700 text-center bg-gray-1000 px-16 py-6 mr-2 border-r border-gray-800">
-        <div className="p-2 bg-gray-500 rounded-full">
-          <img className="rounded-full" src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" />
+      <div className="flex flex-col w-1/6 text-gray-500 text-center bg-gray-1000 mr-2 border-r border-gray-800">
+        <div className="px-16 py-8">
+          <div className="p-2 bg-gray-500 rounded-full">
+            <img className="rounded-full" src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" />
+          </div>
+        </div>
+        <div className="border-b border-gray-800" />
+        <div className="flex-1 flex items-center justify-center">
+          <ul className="left-menu m-0 p-0 w-full px-2">
+            {['Home', 'About', 'Resume', 'Portfolio', 'Contact'].map(menu => (
+              <li>
+                <Link href="/">
+                  <a
+                    className={`block uppercase font-semibold py-2 ${
+                      menu === 'Home' ? 'active bg-blue-1000 text-white' : 'hover:text-blue-1000 '
+                    }`}
+                  >
+                    {menu}
+                  </a>
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
       <div className="flex-grow text-white text-center px-4 py-2 m-2 relative overflow-hidden ">
