@@ -5,12 +5,6 @@ import Link from 'next/link'
 const IndexContent: React.FC = () => {
   return (
     <>
-      <div className="flex absolute w-full h-full opacity-25 z-0">
-        <div className="w-1/5 border-r border-gray-1000" />
-        <div className="w-1/5 border-r border-gray-1000" />
-        <div className="w-1/5 border-r border-gray-1000" />
-        <div className="w-1/5 border-r border-gray-1000" />
-      </div>
       <div className="absolute w-full h-full opacity-25 z-1">
         <Particles />
       </div>
