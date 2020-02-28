@@ -1,6 +1,6 @@
 import React from 'react'
 import { NextPage } from 'next'
-import '../styles/index.css'
+import '../styles/app.scss'
 import IndexContent from '../components/IndexPage'
 import MainLayout from '../components/layouts/MainLayout'
 

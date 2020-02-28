@@ -1,4 +1,4 @@
-const { colors } = require('tailwindcss/defaultTheme')
+const { colors, opacity } = require('tailwindcss/defaultTheme')
 
 module.exports = {
   theme: {
@@ -20,6 +20,7 @@ module.exports = {
     'body': ['Nunito', 'san-serif'],
     },
     opacity: {
+      ...opacity,
       '10': '.1',
     }
   },
