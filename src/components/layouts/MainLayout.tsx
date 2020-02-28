@@ -23,7 +23,6 @@ const MainLayout: React.FC<Props> = ({ children }) => (
       </div>
       <main className="flex-grow text-white text-center px-4 py-2 m-2 relative overflow-hidden">{children}</main>
     </div>
-    <div>{children}</div>
   </>
 )
 
