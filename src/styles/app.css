@@ -1,4 +1,4 @@
 @import "tailwindcss/tailwind";
 
-@import "_resets.css";
-@import "components/MainMenu.css";
+@import "_resets.pcss";
+@import "components/MainMenu.pcss";
