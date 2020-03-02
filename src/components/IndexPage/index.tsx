@@ -8,9 +8,9 @@ const IndexContent: React.FC = () => {
       <div className="absolute w-full h-full opacity-25 z-1">
         <Particles />
       </div>
-      <div className="flex h-full items-center justify-center z-10 relative">
+      <div className="flex w-full h-full items-center justify-center z-10 relative">
         <div className="flex flex-col">
-          <div className="text-5xl font-bold">
+          <div className="text-5xl font-bold text-center">
             This is <span className="text-blue-1000">The Text</span>
           </div>
           <div className="text-xl max-w-2xl text-gray-500">

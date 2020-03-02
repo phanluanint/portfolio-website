@@ -18,18 +18,18 @@ const MainLayout: React.FC<Props> = ({ children }) => (
       <link href="/icons/style.css" rel="stylesheet" />
     </Head>
     <div className="flex bg-gray-1100 h-screen font-body">
-      <div className="flex flex-col w-1/6 text-gray-500 text-center bg-gray-1000 mr-2 border-r border-gray-800">
+      <div className="flex flex-col w-1/6 text-gray-500 bg-gray-1000 border-r border-gray-800">
         <Sidebar />
       </div>
-      <main className="flex-grow text-white text-center px-4 py-2 m-2 relative overflow-hidden">
-        <div className="flex absolute w-full h-full opacity-25 z-0">
+      <div className="flex-grow text-white relative overflow-hidden">
+        <div className="flex absolute w-full h-full z-0">
           <div className="w-1/5 border-r border-gray-1000" />
           <div className="w-1/5 border-r border-gray-1000" />
           <div className="w-1/5 border-r border-gray-1000" />
           <div className="w-1/5 border-r border-gray-1000" />
         </div>
-        {children}
-      </main>
+        <main className="block w-full h-full z-1 relative">{children}</main>
+      </div>
     </div>
   </>
 )

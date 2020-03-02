@@ -20,7 +20,7 @@ const MainMenu = () => {
           <li>
             <Link href={menu.url}>
               <a
-                className={`block uppercase font-semibold py-2 ${
+                className={`block uppercase font-semibold py-2 text-center ${
                   menu.url === router.pathname ? 'active bg-blue-1000 text-white' : 'hover:text-blue-1000 '
                 }`}
               >
