@@ -12,7 +12,7 @@ const MainLayout: React.FC<Props> = ({ children }) => (
       <title>Hello world</title>
       <link rel="shortcut icon" href="/favicon.ico" />
       <link
-        href="https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap&subset=vietnamese"
+        href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,900&display=swap&subset=vietnamese"
         rel="stylesheet"
       />
       <link href="/icons/style.css" rel="stylesheet" />
@@ -21,14 +21,14 @@ const MainLayout: React.FC<Props> = ({ children }) => (
       <div className="flex flex-col w-1/6 text-gray-500 bg-gray-1000 border-r border-gray-800">
         <Sidebar />
       </div>
-      <div className="flex-grow text-white relative overflow-hidden">
+      <div className="flex-grow w-5/6 text-white relative overflow-hidden">
         <div className="flex absolute w-full h-full z-0">
           <div className="w-1/5 border-r border-gray-1000" />
           <div className="w-1/5 border-r border-gray-1000" />
           <div className="w-1/5 border-r border-gray-1000" />
           <div className="w-1/5 border-r border-gray-1000" />
         </div>
-        <main className="block w-full h-full z-1 relative">{children}</main>
+        <main className="block w-full h-full z-1 relative overflow-auto">{children}</main>
       </div>
     </div>
   </>

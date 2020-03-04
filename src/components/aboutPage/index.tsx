@@ -1,11 +1,13 @@
 import React from 'react'
-import Headline from '../commons/Headline'
 import PageContainer from '../commons/PageContainer'
+import AboutMe from './AboutMe'
+import Service from './Service'
 
 const AboutContent: React.FC = () => {
   return (
     <PageContainer>
-      <Headline>About me</Headline>
+      <AboutMe />
+      <Service />
     </PageContainer>
   )
 }
