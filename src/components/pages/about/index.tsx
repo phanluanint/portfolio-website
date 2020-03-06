@@ -1,5 +1,5 @@
 import React from 'react'
-import PageContainer from '../commons/PageContainer'
+import PageContainer from '../../commons/PageContainer'
 import AboutMe from './AboutMe'
 import Service from './Service'
 

@@ -2,14 +2,14 @@ import React from 'react'
 import { NextPage } from 'next'
 import '../styles/app.css'
 import MainLayout from '../components/layouts/MainLayout'
-import AboutContent from '../components/pages/about'
+import ResumeContent from '../components/pages/resume'
 
-const AboutPage: NextPage = () => {
+const ResumePage: NextPage = () => {
   return (
     <MainLayout>
-      <AboutContent />
+      <ResumeContent />
     </MainLayout>
   )
 }
 
-export default AboutPage
+export default ResumePage

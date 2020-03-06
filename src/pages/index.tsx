@@ -1,7 +1,7 @@
 import React from 'react'
 import { NextPage } from 'next'
 import '../styles/app.css'
-import IndexContent from '../components/IndexPage'
+import IndexContent from '../components/pages/index/index'
 import MainLayout from '../components/layouts/MainLayout'
 
 const IndexPage: NextPage = () => {

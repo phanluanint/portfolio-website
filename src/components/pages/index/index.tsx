@@ -1,6 +1,5 @@
 import React from 'react'
 import Particles from 'react-particles-js'
-import Link from 'next/link'
 
 const IndexContent: React.FC = () => {
   return (

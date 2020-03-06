@@ -25,12 +25,16 @@ module.exports = {
          '7xl': '4.5rem'
       },
       height: {
+        '2px': '2px',
         '5px': '5px',
       },
       width: {
         '9': '2.25rem',
         '26': '6.5rem',
         '28': '7rem',
+      },
+      borderWidth: {
+        '6': '6px',
       }
     },
     fontFamily: {

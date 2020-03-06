@@ -1,5 +1,5 @@
 import React from 'react'
-import Headline from '../commons/Headline'
+import Headline from '../../commons/Headline'
 
 const aboutMeInfo = [
   { label: 'Full Name', value: 'David Chester' },
