@@ -2,6 +2,7 @@ import React from 'react'
 import PageContainer from '../../commons/PageContainer'
 import Headline from '../../commons/Headline'
 import Skill from './Skill'
+import SubHeadline from '../../commons/SubHeadline'
 
 const ResumeContent: React.FC = () => {
   return (
@@ -16,6 +17,8 @@ const ResumeContent: React.FC = () => {
         {/* <Skill image="652584.svg" title="CSS3" /> */}
         <Skill image="652578.svg" title="Git" />
       </div>
+      <Headline>Resume</Headline>
+      <SubHeadline iconName="icon-github" text="Working Experience" />
     </PageContainer>
   )
 }
