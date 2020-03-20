@@ -3,7 +3,24 @@ import PageContainer from '../../commons/PageContainer'
 import Headline from '../../commons/Headline'
 import Skill from './Skill'
 import SubHeadline from '../../commons/SubHeadline'
+import Timeline from './Timeline'
 
+const timelines = [
+  {
+    period: '2018 - Present',
+    title: 'Frontend Web Developer',
+    subTitle: 'ACME Company',
+    content:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.',
+  },
+  {
+    period: '2018 - Present',
+    title: 'Frontend Web Developer',
+    subTitle: 'ACME Company',
+    content:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.',
+  },
+]
 const ResumeContent: React.FC = () => {
   return (
     <PageContainer>
@@ -19,6 +36,9 @@ const ResumeContent: React.FC = () => {
       </div>
       <Headline>Resume</Headline>
       <SubHeadline iconName="icon-github" text="Working Experience" />
+      <Timeline timelines={timelines} />
+      <SubHeadline iconName="icon-github" text="Education Qualification" />
+      <Timeline timelines={timelines} />
     </PageContainer>
   )
 }

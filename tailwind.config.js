@@ -25,6 +25,7 @@ module.exports = {
          '7xl': '4.5rem'
       },
       height: {
+        '1px': '1px',
         '2px': '2px',
         '5px': '5px',
       },
@@ -34,7 +35,15 @@ module.exports = {
         '28': '7rem',
       },
       borderWidth: {
+        '3': '3px',
         '6': '6px',
+      },
+      spacing: {
+        '2px': '2px',
+        '3px': '3px',
+        '4px': '4px',
+        '5px': '5px',
+        '9px': '9px'
       }
     },
     fontFamily: {
