@@ -14,16 +14,16 @@ const AboutMe: React.FC = () => {
   return (
     <>
       <Headline>About me</Headline>
-      <div className="flex">
-        <div className="flex-initial w-1/2">
-          <div className="pr-4">
-            <img src="https://tf-react-chester.now.sh/images/about-image.jpg" />
+      <div className="flex flex-col md:flex-row">
+        <div className="flex-initial w-full lg:w-1/2">
+          <div className="pr-0 md:pr-4">
+            <img src="https://tf-react-chester.now.sh/images/about-image.jpg" alt="Avatar" />
           </div>
         </div>
-        <div className="flex-initial w-1/2">
-          <div className="pl-4">
-            <div className="text-4xl">
-              I am <span className="text-blue-1000">A Man</span>
+        <div className="flex-initial w-full lg:w-1/2">
+          <div className="pl-0 md:pl-4">
+            <div className="text-3xl md:text-4xl mt-5 md:mt-0">
+              I am <span className="text-blue-1000">Luan Phan</span>
             </div>
             <div className="text-lg text-gray-500 mt-1">
               I am a frontend web developer. I can provide clean code and pixel perfect design. I also make website more

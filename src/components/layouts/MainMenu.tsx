@@ -10,7 +10,7 @@ const links = [
   { url: '/contact', label: 'Contact' },
 ]
 
-const MainMenu = () => {
+const MainMenu: React.FC = () => {
   const router = useRouter()
 
   return (

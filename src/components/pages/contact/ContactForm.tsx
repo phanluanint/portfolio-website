@@ -2,7 +2,7 @@ import React from 'react'
 import InputText from '../../commons/InputText'
 import InputTextarea from '../../commons/InputTextarea'
 
-const ContactForm = () => {
+const ContactForm: React.FC = () => {
   return (
     <div>
       <InputText name="name" value="" label="Enter your name*" />

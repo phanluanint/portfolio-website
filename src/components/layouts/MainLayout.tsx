@@ -18,10 +18,8 @@ const MainLayout: React.FC<Props> = ({ children }) => (
       <link href="/icons/style.css" rel="stylesheet" />
     </Head>
     <div className="flex bg-gray-1100 h-screen font-body">
-      <div className="flex flex-col w-1/6 text-gray-500 bg-gray-1000 border-r border-gray-800">
-        <Sidebar />
-      </div>
-      <div className="flex-grow w-5/6 text-white relative overflow-hidden">
+      <Sidebar />
+      <div className="w-full lg:w-4/5 xl:w-5/6 flex-grow text-white relative overflow-hidden">
         <div className="flex absolute w-full h-full z-0">
           <div className="w-1/5 border-r border-gray-1000" />
           <div className="w-1/5 border-r border-gray-1000" />

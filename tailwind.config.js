@@ -33,6 +33,7 @@ module.exports = {
         '9': '2.25rem',
         '26': '6.5rem',
         '28': '7rem',
+        '300px': '300px',
       },
       borderWidth: {
         '3': '3px',

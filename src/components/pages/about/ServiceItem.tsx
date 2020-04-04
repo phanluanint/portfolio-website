@@ -1,8 +1,8 @@
 import React from 'react'
 
-const ServiceItem = () => {
+const ServiceItem: React.FC = () => {
   return (
-    <div className="flex-initial p-4 w-1/3">
+    <div className="w-full md:w-1/3 flex-initial p-4">
       <div className="border-gray-800 border-t-6 px-5 py-6 bg-gray-1000 hover:border-blue-1000 transition duration-300 ease-out">
         <div className="mb-5">
           <div className="icon-github text-4xl text-blue-1000" />

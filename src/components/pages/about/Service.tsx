@@ -6,7 +6,7 @@ const Service: React.FC = () => {
   return (
     <>
       <Headline>Services</Headline>
-      <div className="flex">
+      <div className="flex-col md:flex-row flex -ml-4 -mr-4">
         <ServiceItem />
         <ServiceItem />
         <ServiceItem />
