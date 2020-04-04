@@ -15,7 +15,7 @@ const Sidebar: React.FC = () => {
         onClick={(): void => setShow(!show)}
         className="block lg:hidden outline-none focus:outline-none absolute right-0 top-0 w-10 h-10 border border-gray-700 flex items-center justify-center -mr-10 mt-4 bg-gray-900 border-l-0"
       >
-        <span className={show ? 'icon-facebook' : 'icon-linkedin'} />
+        <span className={show ? 'icon-close' : 'icon-menu'} />
       </button>
       <Avatar />
       <div className="border-b border-gray-800" />
