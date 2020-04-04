@@ -10,7 +10,7 @@ const IndexContent: React.FC = () => {
   return (
     <>
       <div className="absolute w-full h-full opacity-25 z-1">
-        <Particles />
+        <Particles width="100%" height="100vh" />
       </div>
       <div className="flex w-full h-full items-center justify-center z-10 relative">
         <div className="flex flex-col p-8">
