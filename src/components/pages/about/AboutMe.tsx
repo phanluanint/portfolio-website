@@ -2,12 +2,12 @@ import React from 'react'
 import Headline from '../../commons/Headline'
 
 const aboutMeInfo = [
-  { label: 'Full Name', value: 'David Chester' },
-  { label: 'Age', value: '27' },
+  { label: 'Full Name', value: 'Luan Phan Minh' },
+  { label: 'Year of Birth', value: '1993' },
   { label: 'Nationality', value: 'Vietnam' },
   { label: 'Language', value: 'English, Vietnamese' },
   { label: 'Location', value: 'Ho Chi Minh City' },
-  { label: 'Freelance', value: 'Available' },
+  { label: 'Freelance', value: 'Available', className: 'text-green-500' },
 ]
 
 const AboutMe: React.FC = () => {
@@ -17,7 +17,7 @@ const AboutMe: React.FC = () => {
       <div className="flex flex-col md:flex-row">
         <div className="flex-initial w-full lg:w-1/2">
           <div className="pr-0 md:pr-4">
-            <img src="https://tf-react-chester.now.sh/images/about-image.jpg" alt="Avatar" />
+            <img src="/images/about-me.jpg" alt="About me picture" />
           </div>
         </div>
         <div className="flex-initial w-full lg:w-1/2">
@@ -35,7 +35,7 @@ const AboutMe: React.FC = () => {
                 <div key={item.label} className="flex my-1">
                   <div className="w-32 font-bold">{item.label}</div>
                   <div className="w-2/2">
-                    <span className="font-bold mr-2">:</span> {item.value}
+                    <span className="font-bold mr-2">:</span> <span className={item.className || ''}>{item.value}</span>
                   </div>
                 </div>
               ))}

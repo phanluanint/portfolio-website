@@ -1,6 +1,11 @@
 import React from 'react'
 import Particles from 'react-particles-js'
 
+const socials = [
+  { link: 'https://www.linkedin.com/in/phanluanint/', icon: 'icon-linkedin' },
+  { link: 'https://github.com/phanluanint', icon: 'icon-github' },
+  { link: 'https://www.facebook.com/phan.luan.initialize/', icon: 'icon-facebook' },
+]
 const IndexContent: React.FC = () => {
   return (
     <>
@@ -10,21 +15,23 @@ const IndexContent: React.FC = () => {
       <div className="flex w-full h-full items-center justify-center z-10 relative">
         <div className="flex flex-col p-8">
           <div className="text-5xl font-bold text-center">
-            Hello, I'm <span className="text-blue-1000">Luan Phan</span>
+            Hi, I'm <span className="text-blue-1000">Luan Phan</span>
           </div>
           <div className="text-xl max-w-2xl text-gray-500 text-justify">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book.
+            I am a Full-stack Developer having 4+ years of experience in website and hybrid mobile app development. In
+            that time I learned, developed, optimized a lot of products using a wide range of technologies.
           </div>
           <div className="flex items-center justify-center  mt-5">
-            {['icon-facebook', 'icon-linkedin', 'icon-github'].map(item => (
-              <div
-                key={item}
+            {socials.map(item => (
+              <a
+                key={item.icon}
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-xl transition duration-300 ease-out border-2 border-gray-800 text-gray-500 flex items-center justify-center rounded-full bg-transparent inline-block m-2 w-12 h-12 hover:border-blue-1000 hover:text-blue-1000 cursor-pointer"
               >
-                <div className={item} />
-              </div>
+                <div className={item.icon} />
+              </a>
             ))}
           </div>
         </div>

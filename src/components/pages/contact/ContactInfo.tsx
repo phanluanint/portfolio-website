@@ -2,21 +2,21 @@ import React from 'react'
 
 const infos = [
   {
-    icon: 'icon-github',
+    icon: 'icon-phone',
     link: 'tel:+84901264846',
     text: '+84 901 26 48 46',
     label: 'Phone',
   },
   {
-    icon: 'icon-github',
+    icon: 'icon-envelope',
     link: 'mailto:phanluanint@gmail.com',
     text: 'phanluanint@gmail.com',
     label: 'Email',
   },
   {
-    icon: 'icon-github',
-    link: 'https://www.linkedin.com/in/phanluanint/',
-    text: 'phanluanint',
+    icon: 'icon-skype',
+    link: 'skype:live:phanminhluan?chat',
+    text: 'live:phanminhluan',
     label: 'LinkedIn',
   },
 ]

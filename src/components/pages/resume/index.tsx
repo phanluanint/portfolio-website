@@ -35,9 +35,9 @@ const ResumeContent: React.FC = () => {
         <Skill image="652578.svg" title="Git" />
       </div>
       <Headline>Resume</Headline>
-      <SubHeadline iconName="icon-github" text="Working Experience" />
+      <SubHeadline iconName="icon-briefcase" text="Working Experience" />
       <Timeline timelines={timelines} />
-      <SubHeadline iconName="icon-github" text="Education Qualification" />
+      <SubHeadline iconName="icon-graduation" text="Education Qualification" />
       <Timeline timelines={timelines} />
     </PageContainer>
   )
