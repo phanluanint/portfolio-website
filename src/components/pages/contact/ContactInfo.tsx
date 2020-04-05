@@ -17,7 +17,7 @@ const infos = [
     icon: 'icon-skype',
     link: 'skype:live:phanminhluan?chat',
     text: 'live:phanminhluan',
-    label: 'LinkedIn',
+    label: 'Skype',
   },
 ]
 const ContactInfo: React.FC = () => {
