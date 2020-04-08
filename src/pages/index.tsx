@@ -1,12 +1,17 @@
 import React from 'react'
 import { NextPage } from 'next'
-import '../styles/index.css'
-import IndexContent from '../components/IndexPage'
+import '../styles/app.css'
+import IndexContent from '../components/pages/index/index'
 import MainLayout from '../components/layouts/MainLayout'
+import { SeoConfig } from '../types/SeoConfig'
 
+const seoConfig: SeoConfig = {
+  title: "Hi, I'm Luan Phan",
+  description: 'This is the profile of Luan Phan',
+}
 const IndexPage: NextPage = () => {
   return (
-    <MainLayout>
+    <MainLayout seoConfig={seoConfig}>
       <IndexContent />
     </MainLayout>
   )

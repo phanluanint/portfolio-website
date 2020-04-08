@@ -1,0 +1,31 @@
+.left-menu {
+  li {
+    a {
+      @apply relative transition-all duration-300 ease-out;
+
+      &::before {
+        @apply absolute top-0 left-0 h-full w-0 invisible z-0 transition-all duration-300 ease-out;
+        content: "";
+        background: rgba(3, 127, 255, 0.2);
+      }
+
+      &.active::before {
+        @apply hidden;
+      }
+
+      &:hover::before {
+        @apply w-full visible;
+      }
+    }
+  }
+}
+
+.x-skill-icon {
+  img {
+    @apply transition-all duration-300 ease-out;
+    filter: opacity(50%);
+    &:hover{
+      filter: unset;
+    }
+  }
+}
