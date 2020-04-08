@@ -21,6 +21,22 @@ const timelines = [
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.',
   },
 ]
+
+const educationTimelines = [
+  {
+    period: '2011 - 2016',
+    title: 'Lac Hong University',
+    subTitle: 'Software Engineer (major in Information Technology)',
+    content: (
+      <>
+        <b>GPA:</b> 7.9/10
+        <br />
+        <b>Relevant Coursework:</b> Software Development, Web Development, Data structure and algorithm, Relational
+        Database
+      </>
+    ),
+  },
+]
 const ResumeContent: React.FC = () => {
   return (
     <PageContainer>
@@ -38,7 +54,7 @@ const ResumeContent: React.FC = () => {
       <SubHeadline iconName="icon-briefcase" text="Working Experience" />
       <Timeline timelines={timelines} />
       <SubHeadline iconName="icon-graduation" text="Education Qualification" />
-      <Timeline timelines={timelines} />
+      <Timeline timelines={educationTimelines} />
     </PageContainer>
   )
 }
