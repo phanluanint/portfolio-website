@@ -21,14 +21,17 @@ export default async (req: NextApiRequest, res: NextApiResponse): Promise<void> 
   }
   try {
     await sgMail.send(msg)
-
     res.setHeader('Content-Type', 'application/json')
     return res.status(200).json({ message: 'Your message has been sent. Thank you.' })
   } catch (error) {
+    // eslint-disable-next-line no-console
     console.error(error)
     if (error.response) {
+      // eslint-disable-next-line no-console
       console.error(error.response.body)
     }
-    return res.status(400).json({ message: JSON.stringify(error) })
+    return res
+      .status(400)
+      .json({ message: 'Something went wrong when trying to send your message. Please try again later.' })
   }
 }
