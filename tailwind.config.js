@@ -49,7 +49,7 @@ module.exports = {
     },
     fontFamily: {
     // 'display': ['Oswald', ...],
-    'body': ['Nunito', 'san-serif'],
+    'body': ['Nunito', 'sans-serif'],
     },
   },
   variants: {},
