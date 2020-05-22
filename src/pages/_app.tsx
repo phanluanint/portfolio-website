@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { getSnapshot } from 'mobx-state-tree'
 import App, { AppContext, AppProps, AppInitialProps } from 'next/app'
 import { Provider } from '../utils/useStore'
@@ -31,6 +31,27 @@ export default class MyApp extends App {
   constructor(props: AppProps & MSTProps) {
     super(props)
     this.store = createStore(props.isServer, props.proxyState)
+  }
+
+  loadFontStyles = (): void => {
+    const sheet = document.createElement('link')
+    sheet.rel = 'stylesheet'
+    sheet.href = '/icons/style.css'
+    sheet.type = 'text/css'
+    document.head.appendChild(sheet)
+  }
+
+  componentDidMount(): void {
+    if (typeof window !== 'undefined') {
+      import('webfontloader').then(WebFont =>
+        WebFont.load({
+          google: {
+            families: ['Nunito:400,600,700,900:vietnamese'],
+          },
+        }),
+      )
+      this.loadFontStyles()
+    }
   }
 
   render(): JSX.Element {

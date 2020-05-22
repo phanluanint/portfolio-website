@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Sidebar from './Sidebar'
 import SeoHead from './SeoHead'
 import { SeoConfig } from '../../types/SeoConfig'
@@ -8,26 +8,6 @@ interface Props {
 }
 
 const MainLayout: React.FC<Props> = ({ children, seoConfig }) => {
-  const loadFontStyles = (): void => {
-    const sheet = document.createElement('link')
-    sheet.rel = 'stylesheet'
-    sheet.href = '/icons/style.css'
-    sheet.type = 'text/css'
-    document.head.appendChild(sheet)
-  }
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      import('webfontloader').then(WebFont =>
-        WebFont.load({
-          google: {
-            families: ['Nunito:400,600,700,900:vietnamese'],
-          },
-        }),
-      )
-      loadFontStyles()
-    }
-  }, [])
   return (
     <>
       <SeoHead seoConfig={seoConfig}>
