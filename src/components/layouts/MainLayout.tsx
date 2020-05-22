@@ -22,6 +22,7 @@ const MainLayout: React.FC<Props> = ({ children, seoConfig }) => {
   return (
     <>
       <SeoHead seoConfig={seoConfig}>
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com/" />
         <link rel="shortcut icon" href="/favicon.ico" />
         {/* <link */}
         {/*  href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,900&display=swap&subset=vietnamese" */}
