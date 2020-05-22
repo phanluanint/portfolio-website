@@ -33,6 +33,7 @@ const MainLayout: React.FC<Props> = ({ children, seoConfig }) => {
       <SeoHead seoConfig={seoConfig}>
         <link rel="dns-prefetch" href="https://fonts.gstatic.com/" />
         <link rel="dns-prefetch" href="https://fonts.googleapis.com/" />
+        <link rel="preload" href="/icons/style.css" as="style" />
         <link rel="shortcut icon" href="/favicon.ico" />
       </SeoHead>
       <div className="flex bg-gray-1100 h-screen font-body">
