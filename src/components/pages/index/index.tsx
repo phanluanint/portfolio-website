@@ -18,8 +18,8 @@ const IndexContent: React.FC = () => {
             Hi, I'm <span className="text-blue-1000">Luan Phan</span>
           </div>
           <div className="text-xl max-w-2xl text-gray-500 text-justify">
-            I am a Full-stack Developer having 4+ years of experience in website and hybrid mobile app development. In
-            that time I learned, developed, optimized a lot of products using a wide range of technologies.
+            I'm a software engineer with 4+ years of practice, most experienced in web development. I specialize in
+            building Booking Websites, Web Services, SSR Single Page Application, E-learning Services and POS System.
           </div>
           <div className="flex items-center justify-center  mt-5">
             {socials.map(item => (

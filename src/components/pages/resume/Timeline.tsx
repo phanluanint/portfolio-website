@@ -27,7 +27,7 @@ const Timeline: React.FC<Props> = ({ timelines }) => {
           <div className="w-full md:w-9/12 ml-4">
             <div className="text-blue-1000 text-2xl font-semibold">{timeline.title}</div>
             <div className="text-white text-lg mt-2 mb-3">{timeline.subTitle}</div>
-            <div className="text-gray-500 text-lg text-justify">{timeline.content}</div>
+            <div className="text-gray-500 text-lg text-left">{timeline.content}</div>
           </div>
         </div>
       ))}

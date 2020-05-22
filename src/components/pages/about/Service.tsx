@@ -16,7 +16,7 @@ const services = [
   {
     icon: 'icon-ubuntu',
     name: 'Server Management',
-    description: 'Fully manage your linux server with 99.99% uptime.',
+    description: 'Fully manage your Linux server with over 99% uptime.',
   },
 ]
 const Service: React.FC = () => {

@@ -6,7 +6,7 @@ const aboutMeInfo = [
   { label: 'Year of Birth', value: '1993' },
   { label: 'Nationality', value: 'Vietnam' },
   { label: 'Language', value: 'English, Vietnamese' },
-  { label: 'Location', value: 'Ho Chi Minh City' },
+  { label: 'Location', value: 'Ho Chi Minh City, Vietnam' },
   { label: 'Freelance', value: 'Available', className: 'text-green-500' },
 ]
 
@@ -26,8 +26,7 @@ const AboutMe: React.FC = () => {
               I am <span className="text-blue-1000">Luan Phan</span>
             </div>
             <div className="text-lg text-gray-500 mt-1">
-              I am a frontend web developer. I can provide clean code and pixel perfect design. I also make website more
-              & more interactive with web animations.
+              I'm a software engineer with 4+ years of practice, most experienced in web development.
             </div>
 
             <div className="text-lg text-gray-500 mt-4">
