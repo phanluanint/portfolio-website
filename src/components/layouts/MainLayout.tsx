@@ -8,6 +8,14 @@ interface Props {
 }
 
 const MainLayout: React.FC<Props> = ({ children, seoConfig }) => {
+  const loadFontStyles = (): void => {
+    const sheet = document.createElement('link')
+    sheet.rel = 'stylesheet'
+    sheet.href = '/icons/style.css'
+    sheet.type = 'text/css'
+    document.head.appendChild(sheet)
+  }
+
   useEffect(() => {
     if (typeof window !== 'undefined') {
       import('webfontloader').then(WebFont =>
@@ -17,6 +25,7 @@ const MainLayout: React.FC<Props> = ({ children, seoConfig }) => {
           },
         }),
       )
+      loadFontStyles()
     }
   }, [])
   return (
@@ -25,11 +34,6 @@ const MainLayout: React.FC<Props> = ({ children, seoConfig }) => {
         <link rel="dns-prefetch" href="https://fonts.gstatic.com/" />
         <link rel="dns-prefetch" href="https://fonts.googleapis.com/" />
         <link rel="shortcut icon" href="/favicon.ico" />
-        {/* <link */}
-        {/*  href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,900&display=swap&subset=vietnamese" */}
-        {/*  rel="stylesheet" */}
-        {/* /> */}
-        <link href="/icons/style.css" rel="stylesheet" />
       </SeoHead>
       <div className="flex bg-gray-1100 h-screen font-body">
         <Sidebar />
