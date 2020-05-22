@@ -17,7 +17,7 @@ const timelines = [
     title: 'Full-stack Developer',
     subTitle: 'Tinselworks Sdn Bhd',
     content: (
-      <p>
+      <div>
         I started working as a Sub-Tech Leader and Full-stack developer on the company products, during this time I
         accomplished <br />
         <ul className="list-disc list-inside">
@@ -36,7 +36,7 @@ const timelines = [
         </ul>
         <span className="text-white">Technologies & tools used:</span> NodeJS, Serverless, ReactJS, ElectronJS, MongoDB,
         HTML, SCSS, Webpack, Web3JS, SVG, Solidity, AWS EC2, Gitlab CI, AWS S3
-      </p>
+      </div>
     ),
   },
   {
@@ -44,7 +44,7 @@ const timelines = [
     title: 'Full-stack Web Developer',
     subTitle: 'Edgeworks Software Ltd',
     content: (
-      <p>
+      <div>
         I worked as a Full-stack developer on multiple projects and accomplished:
         <br />
         <ul className="list-disc list-inside">
@@ -59,7 +59,7 @@ const timelines = [
         <span className="text-white">Technologies & tools used:</span> ReactJS, NodeJS, PHP (Yii2, Laravel &
         CodeIgniter), Wordpress, MongoDB, MySQL, Docker, Nginx, Apache, Linux, Heroku, OpenShift, SCSS, Gulp, JIRA,
         Bitbucket, Slack
-      </p>
+      </div>
     ),
   },
   {
@@ -67,11 +67,11 @@ const timelines = [
     title: 'Web Developer',
     subTitle: 'Web Developer | VNAppTech Co Ltd',
     content: (
-      <p>
+      <div>
         I worked directly with clients to receive their requirements, researched solutions independently to initialized,
         developed, deployed and maintained multiple websites using PHP (CodeIgniter, WordPress), HTML, CSS, JavaScript,
         and JQuery.
-      </p>
+      </div>
     ),
   },
 ]
