@@ -1,6 +1,5 @@
 import React from 'react'
 import { NextPage } from 'next'
-import '../styles/app.css'
 import MainLayout from '../components/layouts/MainLayout'
 import ContactContent from '../components/pages/contact'
 import { SeoConfig } from '../types/SeoConfig'

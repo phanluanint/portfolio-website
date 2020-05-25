@@ -4,6 +4,7 @@ import App, { AppContext, AppProps, AppInitialProps } from 'next/app'
 import { Provider } from '../utils/useStore'
 import createStore from '../utils/createStore'
 import { RootInstance } from '../models'
+import '../styles/app.css'
 
 interface MSTProps {
   isServer: boolean
