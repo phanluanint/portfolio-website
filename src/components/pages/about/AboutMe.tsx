@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Headline from '../../commons/Headline'
 
 const aboutMeInfo = [
@@ -7,7 +8,15 @@ const aboutMeInfo = [
   { label: 'Nationality', value: 'Vietnam' },
   { label: 'Language', value: 'English, Vietnamese' },
   { label: 'Location', value: 'Ho Chi Minh City, Vietnam' },
-  { label: 'Freelance', value: 'Available', className: 'text-green-500' },
+  {
+    label: 'Freelance',
+    value: (
+      <Link href="/contact">
+        <a>Contact me</a>
+      </Link>
+    ),
+    className: 'text-green-500',
+  },
 ]
 
 const AboutMe: React.FC = () => {
@@ -30,7 +39,7 @@ const AboutMe: React.FC = () => {
             </div>
 
             <div className="text-lg text-gray-500 mt-4">
-              {aboutMeInfo.map(item => (
+              {aboutMeInfo.map((item) => (
                 <div key={item.label} className="flex my-1">
                   <div className="w-32 font-bold">{item.label}</div>
                   <div className="w-2/2">

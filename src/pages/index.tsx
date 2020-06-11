@@ -5,8 +5,8 @@ import MainLayout from '../components/layouts/MainLayout'
 import { SeoConfig } from '../types/SeoConfig'
 
 const seoConfig: SeoConfig = {
-  title: "Hi, I'm Luan Phan",
-  description: 'This is the profile of Luan Phan',
+  title: "Luan Phan - A Full-stack developer :)",
+  description: 'A software engineer with 4+ years of practice, most experienced in web development. I specialize in building Booking Websites, Web Services, SSR Single Page Application, E-learning Services and POS System.',
 }
 const IndexPage: NextPage = () => {
   return (
@@ -14,22 +14,6 @@ const IndexPage: NextPage = () => {
       <IndexContent />
     </MainLayout>
   )
-}
-
-IndexPage.getInitialProps = async (): Promise<object> => {
-  return {
-    IndexPage: {
-      counter: { count: 2 },
-      cart: {
-        items: [
-          {
-            name: 'Ahihi',
-            price: 200,
-          },
-        ],
-      },
-    },
-  }
 }
 
 export default IndexPage

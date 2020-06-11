@@ -95,7 +95,7 @@ const ContactForm: React.FC = () => {
   }
 
   return (
-    <div>
+    <div className="mb-8">
       <InputText name="name" value={fields.name} onChange={onChange} error={errors.name} label="Enter your name*" />
       <InputText name="email" value={fields.email} onChange={onChange} error={errors.email} label="Enter your email*" />
       <InputText
