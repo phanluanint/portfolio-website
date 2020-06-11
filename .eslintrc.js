@@ -21,7 +21,6 @@ module.exports =  {
     // e.g. "@typescript-eslint/explicit-function-return-type": "off",
     "react/prop-types": "off", // Disable react prop-types because we already use typescript to validation
     "react/jsx-props-no-spreading": "off", // Allow prop-spreading
-    "no-param-reassign": "off", // Allow param reassign for mobx-state-tree
     "no-plusplus": "off", // Enable plusplus
     "jsx-a11y/anchor-is-valid": "off", // Enable plusplus
   },
