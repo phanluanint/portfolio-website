@@ -16,7 +16,7 @@ const MainMenu: React.FC = () => {
   return (
     <div className="flex-1 flex items-center justify-center">
       <ul className="left-menu m-0 p-0 w-full px-2">
-        {links.map(menu => (
+        {links.map((menu) => (
           <li key={menu.url}>
             <Link href={menu.url} passHref>
               <a

@@ -7,7 +7,7 @@ const lazyLoadStyles = (): void => {
     import('webfontloader').then((WebFont) =>
       WebFont.load({
         google: {
-          families: ['Nunito:400,600,700,900:vietnamese'],
+          families: ['Nunito:400,600,700,900:vietnamese&display=swap'],
         },
       }),
     )

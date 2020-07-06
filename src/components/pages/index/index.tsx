@@ -18,19 +18,20 @@ const IndexContent: React.FC = () => {
             Hi, I'm <span className="text-blue-1000">Luan Phan</span>
           </div>
           <div className="text-xl max-w-2xl text-gray-500 text-justify">
-            A software engineer with 4+ years of practice, most experienced in web development. I specialize in
-            building Booking Websites, Web Services, SSR Single Page Application, E-learning Services and POS System.
+            A software engineer with 4+ years of practice, most experienced in web development. I specialize in building
+            Booking Websites, Web Services, SSR Single Page Application, E-learning Services and POS System.
           </div>
           <div className="flex items-center justify-center  mt-5">
-            {socials.map(item => (
+            {socials.map((item) => (
               <a
                 key={item.icon}
                 href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xl transition duration-300 ease-out border-2 border-gray-800 text-gray-500 flex items-center justify-center rounded-full bg-transparent inline-block m-2 w-12 h-12 hover:border-blue-1000 hover:text-blue-1000 cursor-pointer"
+                aria-label={item.icon}
               >
-                <div className={item.icon} />
+                <i className={item.icon} />
               </a>
             ))}
           </div>
