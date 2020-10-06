@@ -17,7 +17,7 @@ const IndexContent: React.FC = () => {
           <div className="text-5xl font-bold text-center">
             Hi, I'm <span className="text-blue-1000">Luan Phan</span>
           </div>
-          <div className="text-xl max-w-2xl text-gray-500 text-justify">
+          <div className="text-xl max-w-2xl text-gray-500 text-center">
             A software engineer with 4+ years of practice, most experienced in web development. I specialize in building
             Booking Websites, Web Services, SSR Single Page Application, E-learning Services and POS System.
           </div>

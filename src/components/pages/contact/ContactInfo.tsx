@@ -28,7 +28,7 @@ const ContactInfo: React.FC = () => {
           <div className="border border-gray-800 p-4 mr-6">
             <span className={`text-lg sm:text-4xl ${info.icon}`} />
           </div>
-          <div className="text-xs sm:text-lg">
+          <div className="text-sm sm:text-lg">
             <div className="text-white">{info.label}</div>
             <div>
               <a href={info.link} className="hover:text-blue-1000 transition duration-500 ease-out">
