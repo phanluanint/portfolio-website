@@ -28,8 +28,6 @@ const MainLayout: React.FC<Props> = ({ children, seoConfig }) => {
           <main className="block w-full h-full z-1 relative overflow-auto">{children}</main>
         </div>
       </div>
-      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet" />
-      <link href="/icons/style.css" rel="stylesheet" />
     </>
   )
 }
