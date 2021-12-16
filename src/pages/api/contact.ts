@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from 'next'
 import sgMail from '@sendgrid/mail'
 
-const sgKey = process.env.SG_KEY
+const sgKey = process.env.SG_KEY || ''
 sgMail.setApiKey(sgKey)
 
 export default async (req: NextApiRequest, res: NextApiResponse): Promise<void> => {
