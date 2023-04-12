@@ -5,6 +5,7 @@ import { SeoConfig } from '../../types/SeoConfig'
 
 interface Props {
   seoConfig: SeoConfig
+  children: React.ReactNode
 }
 
 const MainLayout: React.FC<Props> = ({ children, seoConfig }) => {

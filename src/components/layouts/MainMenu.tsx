@@ -18,14 +18,14 @@ const MainMenu: React.FC = () => {
       <ul className="left-menu m-0 p-0 w-full px-2">
         {links.map((menu) => (
           <li key={menu.url}>
-            <Link href={menu.url} passHref>
-              <a
-                className={`block uppercase py-2 text-center ${
-                  menu.url === router.pathname ? 'active bg-blue-1000 text-white' : 'hover:text-blue-1000 '
-                }`}
-              >
+            <Link 
+            href={menu.url}
+            className={`block uppercase py-2 text-center ${
+              menu.url === router.pathname ? 'active bg-blue-1000 text-white' : 'hover:text-blue-1000 '
+            }`}
+            >
                 {menu.label}
-              </a>
+              
             </Link>
           </li>
         ))}

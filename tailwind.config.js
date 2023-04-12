@@ -1,16 +1,13 @@
-const { colors, opacity } = require('tailwindcss/defaultTheme')
+const { colors } = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  purge: {
-    enabled: true,
-    content: [
-      './src/pages/**/*.tsx',
-      './src/components/**/*.tsx',
-    ],
-    options: {
-      whitelist: ['body'],
-    },
-  },
+  content: [
+    './src/pages/**/*.tsx',
+    './src/components/**/*.tsx',
+  ],
+  // options: {
+  //   whitelist: ['body'],
+  // },
   theme: {
     extend: {
       colors: {

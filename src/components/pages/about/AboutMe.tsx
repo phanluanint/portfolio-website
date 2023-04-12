@@ -12,7 +12,7 @@ const aboutMeInfo = [
     label: 'Freelance',
     value: (
       <Link href="/contact">
-        <a>Contact me</a>
+        Contact me
       </Link>
     ),
     className: 'text-green-500',

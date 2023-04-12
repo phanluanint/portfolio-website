@@ -3,7 +3,8 @@ import Head from 'next/head'
 import { SeoConfig } from '../../types/SeoConfig'
 
 interface SeoHeadProps {
-  seoConfig: SeoConfig
+  seoConfig: SeoConfig,
+  children: React.ReactNode
 }
 const SeoHead: React.FC<SeoHeadProps> = ({ children, seoConfig }) => {
   return (
