@@ -1,7 +1,6 @@
 import React from 'react'
 
-const Headline: React.FC<{  children: React.ReactNode
-}> = ({ children }) => {
+const Headline: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <div className="relative mb-16 mt-16 md:mt-32 w-full">
       <h3 className="text-4xl md:text-4-5xl text-white uppercase font-bold">{children}</h3>

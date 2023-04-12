@@ -14,7 +14,7 @@ interface Props {
 const Timeline: React.FC<Props> = ({ timelines }) => {
   return (
     <div className="border-l-3 border-gray-800">
-      {timelines.map(timeline => (
+      {timelines.map((timeline) => (
         <div className="flex-col md:flex-row flex mb-8" key={timeline.title}>
           <div className="w-full md:w-3/12">
             <div className="flex items-center pt-1">

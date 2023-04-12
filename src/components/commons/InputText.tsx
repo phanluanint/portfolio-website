@@ -17,8 +17,9 @@ const InputText: React.FC<InputTextProps> = ({ name, value, label, error, onChan
         {label}
       </label>
       <input
-        className={`w-full border border-gray-800 bg-transparent p-3 text-gray-400 outline-none hover:outline-none focus:border-gray-600 transition duration-300 ease-out  ${error &&
-          'border-red-500'}`}
+        className={`w-full border border-gray-800 bg-transparent p-3 text-gray-400 outline-none hover:outline-none focus:border-gray-600 transition duration-300 ease-out  ${
+          error && 'border-red-500'
+        }`}
         type="text"
         name={name}
         id={name}

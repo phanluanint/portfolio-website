@@ -24,7 +24,7 @@ const Service: React.FC = () => {
     <>
       <Headline>Services</Headline>
       <div className="flex-col md:flex-row flex -ml-4 -mr-4">
-        {services.map(service => (
+        {services.map((service) => (
           <ServiceItem key={service.name} service={service} />
         ))}
       </div>

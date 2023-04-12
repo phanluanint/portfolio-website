@@ -10,7 +10,7 @@
     "analyze": "cross-env ANALYZE=true next build",
     "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
     "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx --fix src",
+    "lint": "next lint",
     "export-tailwind-config": "tailwindcss-export-config --config=tailwind.config.js --destination=src/styles/_variables --format=scss"
   },
   "keywords": [],
@@ -38,6 +38,7 @@
     "cross-env": "^7.0.3",
     "eslint": "^8.38.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-next": "^13.3.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsx-a11y": "^6.7.1",

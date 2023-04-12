@@ -10,11 +10,7 @@ const aboutMeInfo = [
   { label: 'Location', value: 'Ho Chi Minh City, Vietnam' },
   {
     label: 'Freelance',
-    value: (
-      <Link href="/contact">
-        Contact me
-      </Link>
-    ),
+    value: <Link href="/contact">Contact me</Link>,
     className: 'text-green-500',
   },
 ]
