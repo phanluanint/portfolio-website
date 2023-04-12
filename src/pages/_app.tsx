@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
-import { AppProps } from 'next/app'
+import type { AppProps } from 'next/app';
+import { Analytics } from '@vercel/analytics/react';
+ 
 import '../styles/app.css'
 
 const lazyLoadStyles = (): void => {
@@ -22,7 +24,12 @@ const lazyLoadStyles = (): void => {
 // This default export is required in a new `pages/_app.js` file.
 const MyApp = ({ Component, pageProps }: AppProps): React.ReactElement => {
   useEffect(lazyLoadStyles, [])
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Component {...pageProps} />
+      <Analytics/>
+    </>
+  )
 }
 
 export default MyApp
