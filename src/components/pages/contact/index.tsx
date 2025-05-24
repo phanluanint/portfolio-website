@@ -1,21 +1,20 @@
 import React from 'react'
 import PageContainer from '../../commons/PageContainer'
 import Headline from '../../commons/Headline'
-import ContactForm from './ContactForm'
 import ContactInfo from './ContactInfo'
+import { Widget } from '@typeform/embed-react'
 
 const ContactContent: React.FC = () => {
   return (
     <PageContainer>
       <Headline>Contact me</Headline>
       <div className="flex-col md:flex-row flex">
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-2/3">
           <div className="mr-0: md:mr-4">
-            <div className="text-2xl">Get In Touch</div>
-            <ContactForm />
+            <Widget id="MSIWdcLI" style={{height: 400}}/>
           </div>
         </div>
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/3">
           <div className="ml-0 md:ml-4">
             <ContactInfo />
           </div>
