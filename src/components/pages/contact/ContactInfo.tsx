@@ -2,22 +2,16 @@ import React from 'react'
 
 const infos = [
   {
-    icon: 'icon-phone',
-    link: 'tel:+84901264846',
-    text: '+84 901 26 48 46',
-    label: 'Phone',
-  },
-  {
     icon: 'icon-envelope',
-    link: 'mailto:phanluanint@gmail.com',
-    text: 'phanluanint@gmail.com',
+    link: 'mailto:me@luanphan.net',
+    text: 'me@luanphan.net',
     label: 'Email',
   },
   {
-    icon: 'icon-skype',
-    link: 'skype:live:phanminhluan?chat',
-    text: 'live:phanminhluan',
-    label: 'Skype',
+    icon: 'icon-linkedin',
+    link: 'https://www.linkedin.com/in/phanluanint',
+    text: 'phanluanint',
+    label: 'LinkedIn',
   },
 ]
 const ContactInfo: React.FC = () => {
@@ -31,7 +25,7 @@ const ContactInfo: React.FC = () => {
           <div className="text-sm sm:text-lg">
             <div className="text-white">{info.label}</div>
             <div>
-              <a href={info.link} className="hover:text-blue-1000 transition duration-500 ease-out">
+              <a href={info.link} className="hover:text-blue-1000 transition duration-500 ease-out" target='_blank' rel="noreferrer">
                 {info.text}
               </a>
             </div>

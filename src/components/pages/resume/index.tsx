@@ -8,9 +8,42 @@ import Timeline from './Timeline'
 const timelines = [
   {
     period: '2019 - Present',
-    title: 'Full-stack Software Engineer',
-    subTitle: 'MillerGold Technology Solutions',
-    content: 'To be continue...',
+    title: 'Full-stack Software Engineer / Tech Lead',
+    subTitle: 'Coder Trove',
+    content: (
+      <ul className="list-disc pl-6 space-y-2">
+        <li>
+          Built and maintained a scalable cloud-native Invoice Financing Platform while contributing to system architecture and infrastructure design.
+        </li>
+        <li>
+          Designed secure AWS infrastructure (VPC, ECS, S3, etc...) using Terraform (IaC), AWS CDK and AWS Pipelines.
+        </li>
+        <li>
+          Modernized a legacy Node.js app by upgrading versions and migrating to TypeScript for maintainability.
+        </li>
+        <li>
+          Integrated banking and accounting systems (ANZ, Xero, MYOB) to automate transactions and invoicing workflows.
+        </li>
+        <li>
+          Implemented CI/CD pipelines (Bitbucket + AWS) and enforced code quality with SonarCloud, ESLint, and Prettier.
+        </li>
+        <li>
+          Led a team of 7+ developers; conducted code reviews, mentored engineers, and handled incident response.
+        </li>
+        <li>
+          Introduced internal code generators to improve team productivity and consistency.
+        </li>
+        <li>
+          Maintained secure, stable production environments and handled hotfixes and recovery operations.
+        </li>
+        <li>
+          Transformed a monolithic application into multiple products using the Strangler Fig pattern.
+        </li>
+        <li>
+          Designed and implemented a fine-grained authorization system to enhance security and access control.
+        </li>
+      </ul>
+    ),
   },
   {
     period: '2018 - 2019',
@@ -18,21 +51,11 @@ const timelines = [
     subTitle: 'Tinselworks Sdn Bhd',
     content: (
       <div>
-        I started working as a Sub-Tech Leader and Full-stack developer on the company products, during this time I
-        accomplished <br />
         <ul className="list-disc list-inside">
-          <li>Designed, developed, deployed and maintained a point of sale application using ReactJS and NodeJS</li>
-          <li>
-            Worked with ElectronJS and ReactJS to built Desktop cross-platform apps for Windows, macOS, and Linux
-            connected with hardware (Thermal Printer & Barcode Scanner)
-          </li>
-          <li>Wrote Ethereum Smart Contract with Solidity language</li>
-          <li>Implemented ETH Smart Contact to a web game built with NodeJS, Vanilla Javascript</li>
-          <li>Designed AWS architecture for ETH blockchain game</li>
-          <li>Setup CI for ETH blockchain game with Gitlab CI for automatic testing and deployment</li>
-          <li>Wrote unit tests and end-to-end tests using MochaJS</li>
-          <li>Set up GETH server and implemented security for ETH blockchain network</li>
-          <li>Managed a small team with three developers</li>
+          <li>Architected AWS infrastructure for ETH blockchain gaming platform (EC2, S3, GitLab CI).</li>
+          <li>Built and deployed smart contracts using Solidity and integrated them into Node.js-based web games.</li>
+          <li>Designed and developed a desktop POS system (ElectronJS + Node.js) with hardware integrations (printers, scanners).</li>
+          <li>Managed a team of 2–3 developers; planned solutions, monitored progress, and collaborated with PMs.</li>
         </ul>
         <span className="text-white">Technologies & tools used:</span> NodeJS, Serverless, ReactJS, ElectronJS, MongoDB,
         HTML, SCSS, Webpack, Web3JS, SVG, Solidity, AWS EC2, Gitlab CI, AWS S3
@@ -45,8 +68,6 @@ const timelines = [
     subTitle: 'Edgeworks Software Ltd',
     content: (
       <div>
-        I worked as a Full-stack developer on multiple projects and accomplished:
-        <br />
         <ul className="list-disc list-inside">
           <li>Designed and optimized heavy MySQL queries for performance improvement</li>
           <li>Develop on both backend and frontend, including a lot of SEO stuff for a booking system</li>
@@ -67,11 +88,10 @@ const timelines = [
     title: 'Web Developer',
     subTitle: 'Web Developer | VNAppTech Co Ltd',
     content: (
-      <div>
-        I worked directly with clients to receive their requirements, researched solutions independently to initialized,
-        developed, deployed and maintained multiple websites using PHP (CodeIgniter, WordPress), HTML, CSS, JavaScript,
-        and JQuery.
-      </div>
+      <ul className="list-disc list-inside">
+        <li>Designed, developed, and maintained small to mid-sized Vietnamese web projects.</li>
+        <li>Worked directly with clients on requirements, solution planning, and delivery.</li>
+      </ul>
     ),
   },
 ]

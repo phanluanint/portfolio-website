@@ -5,7 +5,6 @@ import { loadFull } from 'tsparticles'
 const socials = [
   { link: 'https://www.linkedin.com/in/phanluanint/', icon: 'icon-linkedin' },
   { link: 'https://github.com/phanluanint', icon: 'icon-github' },
-  { link: 'https://www.facebook.com/phan.luan.initialize/', icon: 'icon-facebook' },
 ]
 const IndexContent: React.FC = () => {
   const particlesInit = useCallback(async (engine: any) => {
@@ -101,8 +100,8 @@ const IndexContent: React.FC = () => {
           <div className="text-5xl font-bold text-center">
             Hi, I'm <span className="text-blue-1000">Luan Phan</span>
           </div>
-          <div className="text-xl max-w-2xl text-gray-500 text-center">
-            A software engineer with 4+ years of practice, most experienced in web development. I specialize in building
+          <div className="text-xl max-w-2xl text-gray-500 text-center mt-4">
+            I'm a software engineer with 9+ years of practice, most experienced in web development. I specialize in building
             Booking Websites, Web Services, SSR Single Page Application, E-learning Services and POS System.
           </div>
           <div className="flex items-center justify-center  mt-5">

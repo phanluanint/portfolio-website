@@ -9,9 +9,9 @@ const aboutMeInfo = [
   { label: 'Language', value: 'English, Vietnamese' },
   { label: 'Location', value: 'Ho Chi Minh City, Vietnam' },
   {
-    label: 'Freelance',
-    value: <Link href="/contact">Contact me</Link>,
-    className: 'text-green-500',
+    label: 'Contact info',
+    value: <Link href="/contact">See here</Link>,
+    className: 'text-blue-500',
   },
 ]
 
@@ -31,7 +31,7 @@ const AboutMe: React.FC = () => {
               I am <span className="text-blue-1000">Luan Phan</span>
             </div>
             <div className="text-lg text-gray-500 mt-1">
-              I'm a software engineer with 4+ years of practice, most experienced in web development.
+              I'm a software engineer with 9+ years of practice, most experienced in web development.
             </div>
 
             <div className="text-lg text-gray-500 mt-4">
